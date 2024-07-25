@@ -6,7 +6,8 @@ import Product from './Components/Product';
 import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import {BrowserRouter as Router, Routes} from 'react-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
 function App() {
   return (
     <Router>
@@ -17,8 +18,11 @@ function App() {
         <Route path ='/about' element={<About/>}/>
         <Route path ='/contact' element={<Contact/>}/>
       </Routes>
+      {/* <Home/> */}
+      <Counter/>
     </div>
     </Router>
+    
   )
 }
 
