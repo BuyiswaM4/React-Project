@@ -20,7 +20,7 @@ function App() {
         <Route path ='/contact' element={<Contact/>}/>
       </Routes>
       {/* <Home/> */}
-      {/* <Counter/> */}
+      <Counter/>
     </div>
     </Router>
     </>
