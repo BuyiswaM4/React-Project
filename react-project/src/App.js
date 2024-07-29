@@ -10,19 +10,20 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App() {
   return (
+    <>
     <Router>
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path ='/' element={<Home/>}/>
+        <Route path ='/' element={<Home/>}/> 
         <Route path ='/about' element={<About/>}/>
         <Route path ='/contact' element={<Contact/>}/>
       </Routes>
       {/* <Home/> */}
-      <Counter/>
+      {/* <Counter/> */}
     </div>
     </Router>
-    
+    </>
   )
 }
 
